@@ -1,0 +1,48 @@
+{
+  "status": 200,
+  "success": true,
+  "message": "OK",
+  "content": {
+    "liveId": "684190563538112512",
+    "roomId": "0",
+    "onlineNum": 494,
+    "type": 1,
+    "liveType": 2,
+    "review": true,
+    "needForward": false,
+    "systemMsg": "",
+    "msgFilePath": "https://source.48.cn/live/lrc/20220102/78866a49-c860-43bf-811b-6fbd54935f1c.lrc",
+    "playStreamPath": "https://cychengyuan-vod.48.cn/867891/20220102/cy/684190563538112512-vnd23g6nepfwff1g5n90.m3u8",
+    "user": {
+      "userId": "867891",
+      "userName": "GNZ48-方琪",
+      "userAvatar": "/avatar/2021/1217/867891xewndurzjs9jy1wh1ykqf5o4.gif",
+      "level": 4
+    },
+    "carousels": {
+      "carouselTime": "5000",
+      "carousels": [
+        "/2022/0102/867891xqitbj7me1figw4p78cv8rv0.jpg",
+        "/2022/0102/867891x6vw0g0dyfvcz32afdj38ai7.jpg",
+        "/2022/0102/867891xxm5d4egh0euj4181gn6te5n.jpg",
+        "/2022/0102/867891xh079ta1pvc7s81mnm5dlzlv.jpg",
+        "/2022/0102/867891x8cgf12ra29bu1fn8x9osizh.jpg",
+        "/2022/0102/867891xrf1xg1mpp2yn3gmcb504jb6.jpg",
+        "/2022/0102/867891x23odaljabnp80fsp6id7f5l.jpg",
+        "/2022/0102/867891xviho08gbfw0v8pz18xyij8t.jpg"
+      ]
+    },
+    "topUser": [],
+    "mute": false,
+    "liveMode": 0,
+    "pictureOrientation": 0,
+    "isCollection": 0,
+    "mergeStreamUrl": "",
+    "crm": "",
+    "coverPath": "/2022/0102/867891xg5gyysas4u9g42pb4620x2c.jpg",
+    "title": "٩(๑•̀ω•́๑)۶",
+    "ctime": "1641053341840",
+    "announcement": "",
+    "specialBadge": []
+  }
+}

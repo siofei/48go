@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  48go:
+    image: 48go
+    build:
+      context: .
+      dockerfile: ./Dockerfile

@@ -1,0 +1,107 @@
+# 关注的成员
+follow:
+  607591: GNZ48-吴羽霏
+  867891: GNZ48-方琪
+  42402897: GNZ48-吕曼菲
+  52494482: GNZ48-江雨航
+  722780: GNZ48-梁娇
+  722781: GNZ48-梁乔
+  459991: SNH48-卢天惠
+  677404: SNH48-周诗雨
+  45285682: BEJ48-黄怡慈
+  45285685: BEJ48-黄宣绮
+  607515: GNZ48-黄楚茵
+  459999: SNH48-韩家乐
+  57737429: GNZ48-陈泓宇
+
+# 覆盖文件，仅针对ffmpeg
+cover: True
+
+# 最大同时录制数
+maxThread: 4
+
+# ffmpeg timeout second
+ffmpegTimeout: 25
+
+# spider interval time
+fetchTime: 7
+
+# 所有请求头
+Headers:
+  # Host: 'pocketapi.48.cn'
+  'Content-Type': 'application/json;charset=utf-8'
+  # Accept:'"*/*"'
+  # Accept-Encoding:'gzip, deflate, br'
+  # Connection:'keep-alive'
+  'User-Agent': 'PocketFans201807/6.2.0 (iPhone; iOS 14.6; Scale/3.00)'
+  'Accept-Language': 'zh-Hans-CN;q=1'
+
+# 获取直播信息超时设置（秒）
+timeout: 20
+
+# 成员信息保存文件名
+MemberInfoFileName: member.json
+upgradeMemberInfo: True
+
+# 直播文件输出路径
+# outPath: /Users/sio/Desktop/48LiveGo
+outPath: /48LiveGo
+
+# 获取直播的参数
+liveDataBase:
+  debug: True
+  next: 0
+  record: True
+  groupid: 0
+
+# 口袋房间消息
+HOMEOWNER:
+  needTop1Msg: False
+  roomId: 67352339
+  ownerId: 607591
+  nextTime: 0
+
+# 口袋房间消息获取
+CHATROOM_MASSAGE:
+  extMsgType: USER_LIVE
+  roomId: 67322562
+  ownerId: 867891 # 小偶像ID
+  nextTime: 0
+
+
+# 消息的类型
+extMsgType:
+  直播: USER_LIVE
+  公演: OPEN_LIVE
+  微博: WEI_BO
+  图片: IMAGE
+  视频: VIDEO
+  音频: AUDIO
+  留言板: TEXT
+
+sourceFileUrl: https://source.48.cn
+ApiUrls:
+  LIVE_LIST_URL: https://pocketapi.48.cn/live/api/v1/live/getLiveList # 直播列表
+  LIVE_ONE_URL: https://pocketapi.48.cn/live/api/v1/live/getLiveOne # 直播详细信息
+  UPDATE_INFO_URL: https://pocketapi.48.cn/user/api/v1/client/update/group_team_star # 成员信息
+  SET_COOKIE_URL: https://live.48.cn/Server/do_ajax_setcookie
+  MESSAGE_BOX_URL: https://pocketapi.48.cn/message/api/v1/user/message/list
+  MESSAGE_INFO_URL: https://pocketapi.48.cn/message/api/v1/user/message/info
+  MOBILE_LOGIN_URL: https://pocketapi.48.cn/user/api/v1/login/app/mobile
+  VERIFY_CODE_LOGIN_URL: https://pocketapi.48.cn/user/api/v1/login/app/mobile/code
+  SEND_SMS_URL: https://pocketapi.48.cn/user/api/v1/sms/send2
+  USER_INFO_URL: https://pocketapi.48.cn/user/api/v1/user/info/reload
+  JUJU_LIST_URL: https://pocketapi.48.cn/im/api/v1/conversation/page # 关注列表
+  JUJU_SOURCE_URL: https://pocketapi.48.cn/im/api/v1/im/room/info/type/source
+  JUJU_OWNER_URL: https://pocketapi.48.cn/im/api/v1/chatroom/msg/list/homeowner
+  JUJU_ALL_URL: https://pocketapi.48.cn/im/api/v1/chatroom/msg/list/all
+  IM_USER_INFO: https://pocketapi.48.cn/im/api/v1/im/userinfo
+  ADD_SINGLE_ATTENTION_URL: https://pocketapi.48.cn/user/api/v1/friendships/friends/add
+  REMOVE_SINGLE_ATTENTION_URL: https://pocketapi.48.cn/user/api/v1/friendships/friends/remove
+  FOLLOW_MEMBERS_URL: https://pocketapi.48.cn/user/api/v1/friendships/friends
+  CHECK_IN_URL: https://pocketapi.48.cn/user/api/v1/checkin
+  TRIP_LIST_URL: https://pocketapi.48.cn/trip/api/trip/v1/list
+
+  CHATROOM_MASSAGE: https://pocketapi.48.cn/im/api/v1/chatroom/msg/list/aim/type # 口袋房间直播、公演、微博、图片、视频、音频等
+  HOMEOWNER: https://pocketapi.48.cn/im/api/v1/chatroom/msg/list/homeowner
+
