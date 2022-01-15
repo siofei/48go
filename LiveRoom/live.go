@@ -264,7 +264,7 @@ type DownOption func(string, *Live) error
 func (l *Live) Down(fp string, w io.Writer, options ...DownOption) {
 	var verr error
 	fp = filepath.Join(fp, l.User.UserName, l.Ctime.Format("2006-01-02 15.04.05"))
-	os.MkdirAll(fp, fs.FileMode(0766))
+	os.MkdirAll(fp, fs.FileMode(0777))
 	if verr = downVideo(filepath.Join(fp, l.videoName()), w, config.Config.Cover, l); verr != nil && w != nil {
 		fmt.Fprintln(w, verr)
 	}
